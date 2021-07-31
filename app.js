@@ -22,6 +22,10 @@ app.use((err, _req, res, _next) => {
   }
 });
 
+app.use("*", (_req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
 app.listen(process.env.port || process.env.PORT || 9999, () => {
   console.log(
     `server started at ${process.env.port || process.env.PORT || 9999}`
