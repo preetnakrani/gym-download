@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.download-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.windows-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.windows-logo {
+  margin-bottom: 10px;
+}
+
+.apple-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.apple-logo {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
