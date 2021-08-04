@@ -1,12 +1,18 @@
 import "./App.css";
 import { Button } from "antd";
-import { WindowsFilled, AppleFilled } from "@ant-design/icons";
+import {
+  WindowsFilled,
+  AppleFilled,
+  CodeSandboxCircleFilled,
+} from "@ant-design/icons";
 import "antd/dist/antd.css";
 
 function App() {
   const win =
     "https://gym-apps.s3.us-west-2.amazonaws.com/UBC+GYM-win32-x64.zip";
   const mac = "https://gym-apps.s3.us-west-2.amazonaws.com/UBC+GYM+APP.dmg";
+  const linux =
+    "https://gym-apps.s3.us-west-2.amazonaws.com/UBC+GYM-linux-x64.zip";
   const style = { fontSize: "150px" };
   return (
     <div className="App">
@@ -24,6 +30,12 @@ function App() {
           <div className="windows-download">
             <WindowsFilled style={style} className="windows-logo" />
             <Button type="primary">Download for Windows</Button>
+          </div>
+        </a>
+        <a target="_blank" rel="noreferrer" href={linux}>
+          <div className="linux-download">
+            <CodeSandboxCircleFilled style={style} className="linux-logo" />
+            <Button type="primary">Download for Linux</Button>
           </div>
         </a>
       </div>

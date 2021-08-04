@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 50px;
+  margin-right: 50px;
   cursor: pointer;
 }
 
@@ -45,6 +46,19 @@
 }
 
 .apple-logo {
+  margin-bottom: 10px;
+}
+
+.linux-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.linux-logo {
   margin-bottom: 10px;
 }
 
