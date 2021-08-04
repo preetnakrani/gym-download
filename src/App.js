@@ -5,7 +5,6 @@ import {
   AppleFilled,
   CodeSandboxCircleFilled,
 } from "@ant-design/icons";
-import "antd/dist/antd.css";
 
 function App() {
   const win =
@@ -43,7 +42,7 @@ function App() {
       </div>
       <div className="usewebapp">
         <h2 className="webapp-title">
-          Click the button to book the slot in the cloud!
+          Click the button to use the web version!
         </h2>
         <a href={webapp} className="webapp">
           <Button type="primary" className="web-button">
