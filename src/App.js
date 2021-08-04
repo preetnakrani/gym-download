@@ -13,6 +13,8 @@ function App() {
   const mac = "https://gym-apps.s3.us-west-2.amazonaws.com/UBC+GYM+APP.dmg";
   const linux =
     "https://gym-apps.s3.us-west-2.amazonaws.com/UBC+GYM-linux-x64.zip";
+  const webapp =
+    "http://ubcggymbooking-env.eba-m3sawabi.us-west-2.elasticbeanstalk.com/";
   const style = { fontSize: "150px" };
   return (
     <div className="App">
@@ -37,6 +39,16 @@ function App() {
             <CodeSandboxCircleFilled style={style} className="linux-logo" />
             <Button type="primary">Download for Linux</Button>
           </div>
+        </a>
+      </div>
+      <div className="usewebapp">
+        <h2 className="webapp-title">
+          Click the button to book the slot in the cloud!
+        </h2>
+        <a href={webapp} className="webapp">
+          <Button type="primary" className="web-button">
+            Web Version
+          </Button>
         </a>
       </div>
     </div>
